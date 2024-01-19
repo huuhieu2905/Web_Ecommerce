@@ -74,7 +74,7 @@ export default function Featured({product}){
                 <Column>
                 <div>
                     <Title>{product.title}</Title>
-                    <Desc>{product.description}</Desc>
+                    <Desc>{product.description.substring(0,55)}</Desc>
                     <ButtonsWrapper>
                         <ButtonRead href={'/product/'+product._id} outline={1} white={1} >Read more</ButtonRead>
                         <Button green onClick={addFeaturedToCart}>
@@ -85,7 +85,7 @@ export default function Featured({product}){
                 </div>  
                 </Column>
                 <Column>
-                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d384dfe9ed7a4d37a43dad0200fc5ac1_9366/Ao_DJau_San_Khach_FC_Bayern_21-22_DJen_GM5317_01_laydown.jpg" alt=""/>
+                    <img src="https://huuhieu-next-ecommerce.s3.amazonaws.com/1701832511849.jpg" alt=""/>
                 </Column>
             </ColumnsWrapper> 
         </Center>
